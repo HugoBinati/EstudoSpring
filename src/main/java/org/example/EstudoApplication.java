@@ -10,3 +10,4 @@ public class EstudoApplication {
         SpringApplication.run(EstudoApplication.class, args);
     }
 }
+
