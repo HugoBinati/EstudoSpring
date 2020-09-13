@@ -13,15 +13,15 @@ import javax.validation.Valid;
 public class HelloController {
 
     @Autowired
-    HelloService service;
+    private HelloService service;
 
-    @GetMapping(value="hello")
+    @GetMapping(value = "hello")
     public String helloWorld() {
         return service.helloWorld();
     }
 
-    @PostMapping(value="hello")
-    public Integer sum(@RequestBody @Valid SumDTO sumDTO){
+    @PostMapping(value = "hello")
+    public Integer sum(@RequestBody @Valid SumDTO sumDTO) {
         return service.getSum(sumDTO);
     }
 }
